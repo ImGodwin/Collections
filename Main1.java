@@ -9,7 +9,7 @@ public class Main1 {
 
         try{
 
-            System.out.println("Add any number between 5 - 10");
+           // System.out.println("Add any number between 5 - 10");
             int numFromUser = Integer.parseInt(input.nextLine());
 
             ArrayList<String> duplicate = new ArrayList<>();
@@ -27,7 +27,10 @@ public class Main1 {
 
         }catch(Exception e){
             System.err.println("Incorrect input");
+        }finally {
+            input.close();
         }
+
 
 
 
